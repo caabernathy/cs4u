@@ -43,14 +43,14 @@ body {
 .reveal h3,
 .reveal h4,
 .reveal h5,
-.reveal h6 {
+.reveal h6,
+.reveal slides-subtitle {
   margin: 0 0 20px 0;
   color: #222;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: normal;
-  text-transform: uppercase;
   text-shadow: none;
   word-wrap: break-word; }
 
@@ -68,6 +68,10 @@ body {
 
 .reveal h1 {
   text-shadow: none; }
+
+.reveal slides-subtitle {
+  font-size: 1em;
+  color: #666;}
 
 /*********************************************
  * OTHER
@@ -202,8 +206,30 @@ body {
   line-height: 1.2em;
   vertical-align: top; }
 
+.reveal main {
+  position: relative;
+  min-height: 100px;
+}
+
+.reveal main summary {
+  font-size: 0.4em;
+  line-height: 1.0em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.reveal main instructors {
+  font-size: 0.6em;
+  line-height: 1.0em;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 .reveal small * {
   vertical-align: top; }
+
 
 /*********************************************
  * LINKS
@@ -246,6 +272,11 @@ body {
   background: rgba(255, 255, 255, 0.2);
   border-color: #2a76dd;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
+
+.reveal section img.logo {
+  border: 0;
+  vertical-align: middle;
+  box-shadow: none; }
 
 /*********************************************
  * NAVIGATION CONTROLS
