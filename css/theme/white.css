@@ -207,15 +207,16 @@ body {
   vertical-align: top; }
 
 .reveal main {
-  position: relative;
-  min-height: 100px;
+  position: absolute;
+  height: 80%;
+  width: 100%;
 }
 
 .reveal main summary {
   font-size: 0.4em;
   line-height: 1.0em;
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   left: 0;
 }
 
@@ -225,6 +226,7 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
+  text-align: right;
 }
 
 .reveal small * {
@@ -274,7 +276,9 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 .reveal section img.logo {
-  border: 0;
+  border: none;
+  width: 20px;
+  height: 20px;
   vertical-align: middle;
   box-shadow: none; }
 
