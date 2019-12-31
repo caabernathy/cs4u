@@ -1,0 +1,94 @@
+/**
+ * A simple theme for reveal.js presentations, similar
+ * to the default theme. The accent color is darkblue.
+ *
+ * This theme is Copyright (C) 2012 Owen Versteeg, https://github.com/StereotypicalApps. It is MIT licensed.
+ * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
+$mainColor: #000;
+$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingColor: #000;
+$headingTextShadow: none;
+$headingTextTransform: none;
+$backgroundColor: #fff;
+$linkColor: #00008B;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: rgba(0, 0, 0, 0.99);
+
+section.has-dark-background {
+	&, h1, h2, h3, h4, h5, h6, slides-subtitle {
+		color: #fff;
+	}
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal {
+  .slides {
+	text-align: left;
+  }
+
+  slides-subtitle {
+    font-size: 1em;
+    color: #666;
+  }
+
+  section {
+    img {
+      &.logo {
+        width: 20px;
+        height: 20px;
+        border: 0;
+        vertical-align: middle;
+        box-shadow: none;
+      }
+      &.feature {
+        border: none;
+        vertical-align: middle;
+        box-shadow: none;
+        float: right;
+      }
+    }
+  }
+
+  main {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    summary {
+      font-size: 0.4em;
+      line-height: 1.0em;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    instructors {
+      font-size: 0.6em;
+      line-height: 1.0em;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      text-align: right;
+    }
+  }
+}
